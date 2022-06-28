@@ -33,7 +33,8 @@
               :key="lesson.id"
               :title="lesson.title"
               :availableAt="new Date(lesson.availableAt)"
-              :slug="lesson.slug" />
+              :slug="lesson.slug"
+              :isLive="lesson.lessonType==='live' ? true : false" />
 
           </div>
 
