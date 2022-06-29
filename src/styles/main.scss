@@ -6,3 +6,11 @@ body {
   @apply bg-gray-900 text-gray-100;
   -webkit-font-smoothing: antialiased
 }
+
+.btn {
+  @apply p-4 items-center flex rounded font-bold uppercase gap-2 justify-center transition-colors;
+
+  &.btn-outline {
+    @apply border;
+  }
+}
