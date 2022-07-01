@@ -2,7 +2,8 @@
   <div class="flex flex-col min-h-screen">
     <Header />
     <main class="flex flex-1">
-      <Video />
+      <Video :lessonSlug="slug" v-if="slug" />
+      <div v-else class="flex-1"></div>
       <Sidebar />
     </main>
   </div>
@@ -19,6 +20,11 @@ export default {
     Header,
     Sidebar,
     Video
+  },
+  data() {
+    return {
+      slug: this.$route.params.slug
+    }
   }
 }
 </script>

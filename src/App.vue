@@ -1,16 +1,11 @@
 <template>
   <div>
-    <Event />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Event from './pages/Event.vue'
-
 export default {
-  name: 'App',
-  components: {
-    Event
-  }
+  name: 'App'
 }
 </script>

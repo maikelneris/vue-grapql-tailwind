@@ -88,6 +88,9 @@ import { Player, Youtube, DefaultUi } from '@vime/vue'
 
 export default {
   name: 'Video',
+  props: {
+    lessonSlug: String
+  },
   components: {
     PhDiscordLogo,
     PhLightning,

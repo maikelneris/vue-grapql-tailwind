@@ -1,10 +1,10 @@
 <template>
-  <a href="#" class="block pb-8">
+  <router-link :to="`/event/lesson/${slug}`" class="block pb-8 group">
     <span class="text-gray-300">
       {{ availableAtFormat }}
     </span>
 
-    <div class="rounded border border-gray-500 p-4 mt-2">
+    <div class="rounded border border-gray-500 p-4 mt-2 group-hover:border-green-500">
       <header class="flex items-center justify-between">
         <span v-if="isLessonAvailable" class="text-sm text-blue-500 font-medium flex items-center gap-2">
           <PhCheckCircle :size="20" />
@@ -25,7 +25,7 @@
         {{ title }}
       </strong>
     </div>
-  </a>
+  </router-link>
 </template>
 
 <script>
