@@ -16,7 +16,7 @@
               slug
             }
           }
-        `"        
+        `" 
       >
         <template v-slot="{ result: { loading, error, data } }">
           <!-- Loading -->
@@ -55,11 +55,6 @@ export default {
   name: 'Sidebar',
   components: {
     Lesson
-  },
-  data () {
-    return {
-      name: 'Anne'
-    }
   }
 }
 </script>

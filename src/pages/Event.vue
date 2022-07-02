@@ -25,6 +25,11 @@ export default {
     return {
       slug: this.$route.params.slug
     }
+  },
+  watch: {
+    '$route'(to) {
+      this.slug = to.params.slug
+    }
   }
 }
 </script>
