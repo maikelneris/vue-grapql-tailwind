@@ -17,6 +17,7 @@ npm install
 
 ### Projeto no Graphcms
 Você pode clonar o database no graphcms usado nesse projeto clicando no link abaixo:
+
 [![Clone project](https://graphcms.com/button)](https://app.graphcms.com/clone/41983f56bff6490d9ad8ad51382e5c55?name=Ignite%20Lab%20Rocketseat%20in%20VUE)
 
 ### Configuração das variáveis
