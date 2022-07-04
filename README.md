@@ -1,5 +1,7 @@
 # Ignite Lab da RocketSeat em VUEJS
 
+Preview na Vercel: https://vue-grapql-tailwind.vercel.app/
+
 Esta é uma implementação do projeto ensinado pela RocketSeat no Ignite Lab 2022. Mas feito em VUEJS!
 
 Trata-se de uma plataforma para exibição de vídeos após cadastro de email. Os vídeos e os assinantes são armazenados no graphcms.com e acessados através da API em graphql.
