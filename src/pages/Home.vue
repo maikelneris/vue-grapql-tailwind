@@ -26,7 +26,7 @@
             name,
             email
           }"
-          @done="onCreateSubscriber"
+          @done="onCreateSubscriber"               
         >
           <template v-slot="{ mutate, loading, error }">
             
@@ -46,12 +46,12 @@
                 v-model="email"
                 placeholder="Digite seu email"
               >
-              <button :disabled="loading" @click="mutate()" type="submit" class="mt-4 bg-green-500 uppercase py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors">
+              <button :disabled="loading" @click="mutate()" type="submit" class="disabled:opacity-40 mt-4 bg-green-500 uppercase py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors flex items-center justify-center">
                 Garantir minha vaga
               </button>
             </div>
 
-            <p v-if="error">An error occurred: {{ error }}</p>
+            <p v-if="error" class="text-orange-600 font-bold mt-4">Ocorreu um erro ao cadastrar seu email. Talvez ele já tenha sido cadastrado. Tente novamente.</p>
           </template>
         </ApolloMutation>
 
@@ -66,20 +66,21 @@
 
 <script>
 import Logo from '../components/Logo'
+
 export default {
   name: 'Home',
   components: {
-    Logo
+    Logo    
   },
   data() {
     return {
       name: 'Maikel',
-      email: 'mike@decodeweb.com.br'
+      email: 'mike@decodeweb.com.br'      
     }
   },
   methods: {
     onCreateSubscriber() {
-      alert('ok');
+      this.$router.push('/event')
     }
   }
 }

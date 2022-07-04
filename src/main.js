@@ -12,6 +12,9 @@ const apolloClient = new ApolloClient({
   headers: {
     authorization: `Bearer ${process.env.VUE_APP_GRAPH_CMS_TOKEN}`
   },
+  onError(err) {
+    console.log(err.graphQLErrors[0].message)
+  },
   cache: new InMemoryCache()
 })
 
